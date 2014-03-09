@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "facebook feed herp-derper",
+  "description": "This extension herps derps facebook comments..",
+  "version": "2.0",
+
+  "permissions": [
+    "https://www.facebook.com/"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["contentscript.js"]
+    }
+  ]
+}
+ 
